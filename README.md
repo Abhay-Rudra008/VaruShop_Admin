@@ -1,16 +1,82 @@
-# React + Vite
+# 👑 VaruShop - Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
+The **VaruShop Admin Dashboard** is a secure, centralized web application designed to oversee and manage the entire VaruShop multi-vendor ecosystem. It provides the platform owner with comprehensive tools to monitor financial health, moderate content, manage user access, and handle retailer payouts.
 
-Currently, two official plugins are available:
+## ✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📊 Analytics & Overview
+* **Master Dashboard:** Real-time statistics displaying total earnings, active users, and registered retailers.
+* **Financial Insights:** Interactive graphs visualizing platform revenue and transaction trends over time.
 
-## React Compiler
+### 👥 User & Retailer Management
+* **Account Control:** View, block, or soft-delete user accounts to maintain a safe environment.
+* **Retailer Onboarding:** Dedicated approval workflow to review and verify new vendor registrations.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛍️ Catalog & Product Control
+* **Category Management:** Full CRUD (Create, Read, Update, Delete) capabilities for the global platform categories.
+* **Global Product Directory:** View all products uploaded by every retailer, equipped with advanced filtering and search capabilities.
 
-## Expanding the ESLint configuration
+### 🛡️ Moderation & Finance
+* **Review Moderation:** Monitor customer feedback and delete inappropriate or spam reviews.
+* **Payout Processing:** Dedicated payment portal to review and approve 90% withdrawal requests submitted by retailers.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+* **Frontend:** React, Vite, Tailwind CSS
+* **Backend Integration:** Node.js / Express (Connected to centralized VaruShop API)
+* **Database:** MySQL
+* **Search Engine:** Meilisearch
+
+## 🎥 Video Demonstration
+Watch the full working demo of the VaruShop Admin Dashboard, showcasing user management, ecosystem analytics, and retailer payout approvals:
+
+[![VaruShop Admin Demo](https://img.youtube.com/vi/2ZMWX3ZKEUw/0.jpg)](https://youtu.be/2ZMWX3ZKEUw?si=yKEZPqs8PwMzdxAT)
+
+
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td align="center"><a href="#"><img src="./photo/admin_overview.png" alt="Overview Dashboard" style="width: 100%; max-width: 250px;"></a><br>Overview & Graphs</td>
+    <td align="center"><a href="#"><img src="./photo/user_page.png" alt="User Management" style="width: 100%; max-width: 250px;"></a><br>User/Retailer Control</td>
+  
+  </tr>
+  <tr>
+      <td align="center"><a href="#"><img src="./photo/product_page.png" alt="Product Management" style="width: 100%; max-width: 250px;"></a><br>Products</td>
+    <td align="center"><a href="#"><img src="./photo/payment_page.png" alt="Payment Approvals" style="width: 100%; max-width: 250px;"></a><br>Payment Approvals</td>
+  </tr>
+</table>
+
+## 💻 Installation and Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone this Repository
+
+
+2. **Open the project & Install Dependencies:**
+Navigate to the project directory in your terminal and run:
+```bash
+npm install
+
+```
+
+
+3. **Environment Configuration:**
+* Create a `.env` file in the root directory.
+* Add your centralized backend API URL (e.g., `VITE_BACKEND_URL=http://localhost:8080`).
+
+
+4. **Run the Development Server:**
+```bash
+npm run dev
+
+```
+
+
+5. **Access the Dashboard:**
+Open your browser and navigate to the local port provided by Vite (usually `http://localhost:5173`).
+
+
+
+
